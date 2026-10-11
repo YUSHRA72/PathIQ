@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PathIQ | Skill Assessment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html" class="logo">
+        Path<span>IQ</span><small>✦</small>
+    </a>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html">Home</a>
+        <a href="login.html" class="dashboard-logout">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="assessment-page">
+
+
+    <!-- INTRO -->
+
+    <section class="assessment-intro">
+
+        <div class="assessment-badge">
+            ✦ let's see what you know
+        </div>
+
+        <h1>
+            Find your
+            <span>skill level</span> ♡
+        </h1>
+
+        <p>
+            Choose a skill and answer a few quick questions
+            to help PathIQ understand where you are.
+        </p>
+
+    </section>
+
+
+
+    <!-- ASSESSMENT CARD -->
+
+    <section class="assessment-card">
+
+
+        <!-- SKILL SELECTOR -->
+
+        <div class="assessment-skill-selector">
+
+            <label for="skillSelect">
+                CHOOSE A SKILL
+            </label>
+
+            <select id="skillSelect">
+
+                <option value="">
+                    Select a skill
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- TOP -->
+
+        <div class="assessment-top">
+
+            <div>
+
+                <span class="mini-label">
+                    SKILL ASSESSMENT
+                </span>
+
+                <h2 id="skillTitle">
+                    Select a skill
+                </h2>
+
+            </div>
+
+
+            <div class="question-count">
+
+                <span id="currentQuestion">
+                    1
+                </span>
+
+                /
+
+                <span id="totalQuestions">
+                    5
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROGRESS -->
+
+        <div class="assessment-progress">
+
+            <div
+                id="assessmentProgress"
+                class="assessment-progress-fill">
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION -->
+
+        <div class="question-area">
+
+            <span class="question-number">
+
+                QUESTION
+                <span id="questionNumber">
+                    01
+                </span>
+
+            </span>
+
+
+            <h3 id="questionText">
+                Select a skill to begin your assessment.
+            </h3>
+
+
+
+            <!-- OPTIONS -->
+
+            <div class="options">
+
+                <button
+                    class="option"
+                    data-answer="A"
+                    disabled>
+
+                    <span class="option-letter">
+                        A
+                    </span>
+
+                    <span id="optionA">
+                        Option A
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="option"
+                    data-answer="B"
+                    disabled>
+
+                    <span class="option-letter">
+                        B
+                    </span>
+
+                    <span id="optionB">
+                        Option B
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="option"
+                    data-answer="C"
+                    disabled>
+
+                    <span class="option-letter">
+                        C
+                    </span>
+
+                    <span id="optionC">
+                        Option C
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="option"
+                    data-answer="D"
+                    disabled>
+
+                    <span class="option-letter">
+                        D
+                    </span>
+
+                    <span id="optionD">
+                        Option D
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <div class="assessment-footer">
+
+            <button
+                id="nextButton"
+                class="assessment-next"
+                disabled>
+
+                Next question
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- NOTE -->
+
+    <section class="assessment-note">
+
+        <span>
+            ✦
+        </span>
+
+        <p>
+            Don't worry about getting everything right.
+            Your answers simply help us understand your
+            starting point.
+        </p>
+
+        <span>
+            ♡
+        </span>
+
+    </section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

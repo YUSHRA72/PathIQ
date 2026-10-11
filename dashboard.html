@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PathIQ | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html" class="logo">
+        Path<span>IQ</span><small>✦</small>
+    </a>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html">Home</a>
+        <a href="login.html" class="dashboard-logout">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="dashboard">
+
+    <!-- WELCOME SECTION -->
+
+    <section class="dashboard-welcome">
+
+        <div>
+
+            <div class="dashboard-badge">
+                ✦ your journey starts here
+            </div>
+
+            <h1>
+                Hey, <span id="userName">there</span> ♡
+            </h1>
+
+            <p>
+                Let's turn your career goals into a path
+                you can actually follow.
+            </p>
+
+        </div>
+
+
+        <div class="career-goal-card">
+
+            <span>
+                YOUR CAREER GOAL
+            </span>
+
+            <h2 id="careerGoal">
+                Software Engineer ♡
+            </h2>
+
+            <p>
+                Keep going. You're building something good.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ASSESSMENT ACTION -->
+
+    <section class="assessment-action">
+
+        <div>
+
+            <span class="mini-label">
+                READY TO CHECK YOUR SKILLS?
+            </span>
+
+            <h2>
+                Find out where you stand ♡
+            </h2>
+
+            <p>
+                Take a quick assessment and let PathIQ
+                identify your skill gaps.
+            </p>
+
+        </div>
+
+        <a
+            href="assessment.html"
+            class="assessment-action-button">
+
+            Take Assessment →
+
+        </a>
+
+    </section>
+
+
+    <!-- DASHBOARD STATS -->
+
+    <section class="dashboard-stats">
+
+        <div class="stat-card stat-purple">
+
+            <span class="stat-icon">
+                ✦
+            </span>
+
+            <div>
+
+                <small>
+                    SKILLS ASSESSED
+                </small>
+
+                <strong id="skillsAssessed">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card stat-pink">
+
+            <span class="stat-icon">
+                ♡
+            </span>
+
+            <div>
+
+                <small>
+                    SKILL GAPS
+                </small>
+
+                <strong id="skillGaps">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card stat-yellow">
+
+            <span class="stat-icon">
+                →
+            </span>
+
+            <div>
+
+                <small>
+                    ROADMAP ITEMS
+                </small>
+
+                <strong id="roadmapItems">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card stat-blue">
+
+            <span class="stat-icon">
+                ✓
+            </span>
+
+            <div>
+
+                <small>
+                    PROGRESS
+                </small>
+
+                <strong id="progress">
+                    0%
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS + SKILL GAPS -->
+
+    <section class="dashboard-grid">
+
+
+        <!-- YOUR SKILLS -->
+
+        <div class="dashboard-card skills-card">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <span class="mini-label">
+                        YOUR SKILLS
+                    </span>
+
+                    <h2>
+                        How you're doing
+                    </h2>
+
+                </div>
+
+                <span class="card-decoration">
+                    ✦
+                </span>
+
+            </div>
+
+
+            <div
+                class="skill-item"
+                data-skill-id="1">
+
+                <div class="skill-info">
+
+                    <span>
+                        Java
+                    </span>
+
+                    <strong class="skill-percentage">
+                        72%
+                    </strong>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill purple-fill"
+                        style="width: 72%;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="skill-item"
+                data-skill-id="3">
+
+                <div class="skill-info">
+
+                    <span>
+                        DSA
+                    </span>
+
+                    <strong class="skill-percentage">
+                        48%
+                    </strong>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill pink-fill"
+                        style="width: 48%;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="skill-item"
+                data-skill-id="4">
+
+                <div class="skill-info">
+
+                    <span>
+                        SQL
+                    </span>
+
+                    <strong class="skill-percentage">
+                        65%
+                    </strong>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill yellow-fill"
+                        style="width: 65%;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="skill-item"
+                data-skill-id="13">
+
+                <div class="skill-info">
+
+                    <span>
+                        Spring Boot
+                    </span>
+
+                    <strong class="skill-percentage">
+                        55%
+                    </strong>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill blue-fill"
+                        style="width: 55%;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SKILL GAPS -->
+
+        <div class="dashboard-card gaps-card">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <span class="mini-label">
+                        SKILL GAPS
+                    </span>
+
+                    <h2>
+                        What to work on
+                    </h2>
+
+                </div>
+
+                <span class="card-decoration">
+                    ♡
+                </span>
+
+            </div>
+
+
+            <div id="skillGapList">
+
+                <div class="gap-item">
+
+                    <div>
+
+                        <strong>
+                            Loading...
+                        </strong>
+
+                        <span>
+                            Finding your skill gaps
+                        </span>
+
+                    </div>
+
+                    <b>
+                        ...
+                    </b>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="skill-analysis.html"
+                class="small-action">
+
+                View full skill analysis →
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ROADMAP -->
+
+    <section class="roadmap-card dashboard-card">
+
+        <div class="roadmap-header">
+
+            <div>
+
+                <span class="mini-label">
+                    YOUR ROADMAP
+                </span>
+
+                <h2>
+                    Your next steps
+                    <span>♡</span>
+                </h2>
+
+            </div>
+
+
+            <a
+                href="roadmap.html"
+                class="small-action">
+
+                View roadmap →
+
+            </a>
+
+        </div>
+
+
+        <div id="roadmapList">
+
+            <div class="roadmap-item">
+
+                <div class="roadmap-number">
+                    01
+                </div>
+
+                <div class="roadmap-content">
+
+                    <h3>
+                        Loading roadmap...
+                    </h3>
+
+                    <p>
+                        Building your personalized learning path.
+                    </p>
+
+                </div>
+
+                <span class="roadmap-status not-started">
+                    Loading
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUOTE -->
+
+    <section class="dashboard-quote">
+
+        <span>
+            ✦
+        </span>
+
+        <p>
+            You don't need to have it all figured out.
+            You just need to know your next step.
+        </p>
+
+        <span>
+            ♡
+        </span>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

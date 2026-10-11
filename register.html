@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PathIQ | Create Your Account</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Patrick+Hand&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        Path<span>IQ</span><small>✦</small>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html" class="login-link">
+            Already have an account?
+        </a>
+    </nav>
+
+</header>
+
+
+<main class="auth-page">
+
+    <div class="auth-decoration decoration-one">✦</div>
+    <div class="auth-decoration decoration-two">♡</div>
+    <div class="auth-decoration decoration-three">✧</div>
+
+
+    <section class="register-card">
+
+        <div class="register-intro">
+
+            <div class="auth-badge">
+                ✦ let's get started
+            </div>
+
+            <h1>
+                Build your path.
+                <span>One step at a time ♡</span>
+            </h1>
+
+            <p>
+                Tell us a little about yourself so PathIQ
+                can help you find the right direction.
+            </p>
+
+        </div>
+
+
+        <form id="registerForm">
+
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Your name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="What should we call you?"
+                    required
+                >
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+            </div>
+
+
+            <!-- PASSWORD -->
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+            </div>
+
+
+            <!-- EDUCATION -->
+
+            <div class="form-group">
+
+                <label for="education">
+                    Education
+                </label>
+
+                <input
+                    type="text"
+                    id="education"
+                    name="education"
+                    placeholder="e.g. B.Tech Computer Science"
+                >
+
+            </div>
+
+
+            <!-- SEMESTER + HOURS -->
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="semester">
+                        Semester
+                    </label>
+
+                    <input
+                        type="number"
+                        id="semester"
+                        name="semester"
+                        min="1"
+                        max="12"
+                        placeholder="5"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="learningHours">
+                        Learning hours / week
+                    </label>
+
+                    <input
+                        type="number"
+                        id="learningHours"
+                        name="learningHours"
+                        min="1"
+                        max="168"
+                        placeholder="10"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- CAREER -->
+
+            <div class="form-group">
+
+                <label for="careerId">
+                    What are you aiming for? ✦
+                </label>
+
+                <select id="careerId" name="careerId">
+
+                    <option value="">
+                        Choose your career
+                    </option>
+
+                    <option value="1">
+                        Software Engineer
+                    </option>
+
+                    <option value="2">
+                        ML Engineer
+                    </option>
+
+                    <option value="3">
+                        Frontend Developer
+                    </option>
+
+                    <option value="4">
+                        Backend Developer
+                    </option>
+
+                    <option value="5">
+                        Data Analyst
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="register-button">
+
+                Create my PathIQ account
+                <span>→</span>
+
+            </button>
+
+
+            <p id="registerMessage" class="form-message"></p>
+
+
+        </form>
+
+
+        <div class="auth-footer">
+
+            Already have an account?
+
+            <a href="login.html">
+                Login here
+            </a>
+
+            ♡
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

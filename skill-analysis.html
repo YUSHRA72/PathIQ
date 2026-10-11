@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PathIQ | Skill Analysis</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html" class="logo">
+        Path<span>IQ</span><small>✦</small>
+    </a>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="projects.html">Projects</a>
+        <a href="login.html" class="dashboard-logout">Logout</a>
+    </nav>
+
+</header>
+
+
+<main class="skill-analysis-page">
+
+    <section class="skill-analysis-intro">
+
+        <div class="skill-analysis-badge">
+            ✦ your skill analysis
+        </div>
+
+        <h1>
+            Know where you are,
+            <span>then grow from there ♡</span>
+        </h1>
+
+        <p>
+            PathIQ compares your current skill levels
+            with what your career goal requires.
+        </p>
+
+    </section>
+
+
+    <section class="analysis-summary">
+
+        <div class="analysis-summary-card summary-purple">
+
+            <span class="summary-icon">✦</span>
+
+            <div>
+                <small>CAREER GOAL</small>
+                <strong id="analysisCareer">
+                    Loading...
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="analysis-summary-card summary-pink">
+
+            <span class="summary-icon">♡</span>
+
+            <div>
+                <small>SKILLS WITH GAPS</small>
+                <strong id="analysisGapCount">
+                    0
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="analysis-summary-card summary-yellow">
+
+            <span class="summary-icon">→</span>
+
+            <div>
+                <small>BIGGEST GAP</small>
+                <strong id="biggestGap">
+                    0%
+                </strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="skill-analysis-card">
+
+        <div class="skill-analysis-heading">
+
+            <div>
+                <span class="mini-label">
+                    SKILL BREAKDOWN
+                </span>
+
+                <h2>
+                    What to work on
+                </h2>
+            </div>
+
+            <span class="analysis-decoration">
+                ✦
+            </span>
+
+        </div>
+
+
+        <div id="analysisList">
+
+            <div class="analysis-loading">
+
+                <span>✦</span>
+
+                <p>
+                    Analyzing your skills...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="analysis-note">
+
+        <span>♡</span>
+
+        <p>
+            Your skill gap isn't a failure.
+            It's simply showing you where your next step is.
+        </p>
+
+        <span>✦</span>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
